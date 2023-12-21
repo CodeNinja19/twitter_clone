@@ -1,0 +1,82 @@
+
+<!-- I used flexbox to design this twitter clone 
+
+        #some of the feature i added according to the document are:
+    
+            *Responsiveness: all the buttons are responsive with transitions and give a size increase on hovering along with a grap 
+            *used online color picker and google for the various images and fonts
+            *none of buttons when clicked will do nothing 
+        
+        I first made a div with is positions using flexbox then inside this div i made multiple div's for each component separately
+        In general i used a div inside a div for better spacing and control -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="x.css">
+        <title>Log in to X</title>
+    </head>
+    <body>
+
+        <div class="main"> <!-- The main element having all the components-->
+
+            <div class="header"> <!-- The header containing the twitter logo -->
+                <button class="x">x</button>
+                <img class="logo" src="Twitter_white.png" alt="Logo">
+                <div></div>
+            </div>
+            <div class="Signin"> <!-- to style sign text-->
+                Sign in to X
+            </div>
+
+            <div id="google_login"> <!-- to make the google sign in -->
+                <button class="login">
+                    <div class="arrange_google">
+                        <img class="google_logo" src="google_logo.png" alt="google logo">
+                        <span style="height:20px;padding-top:4px">&nbsp;Sign in with Google</span>
+                    </div>
+                </button>
+            </div>
+
+            <div id="apple_login"> <!-- to make the apple sign in -->
+                <button class="login">
+                    <div class="arrange_google">
+                    <img class="apple_logo" src="apple_logo.png" alt="google logo">
+                    <span style="height:20px;padding-top:4px">Sign in with Apple
+                    </span>
+                </div>
+                </button>
+            </div>
+
+            <div class="separation">  <!-- to make the line separating the element-->
+                <div><hr/></div>
+                <div style="color:white;font-size:20px">or</div>
+                <div><hr/></div>
+            </div>
+
+            <div class="entry">  <!-- to create text box to enter the details -->
+
+                <input class="entry_box" name="jj" placeholder="&nbsp;Phone,email or username">  <!-- default type in text so didn't give any-->
+            </div>
+            <!-- to make the next button-->
+            <div class="next">
+                <button class="login"><span class="text_next">Next</span></button>
+            </div>
+
+            <div class="forgot">  <!--to make the forget button-->
+                <button class="login" style="background-color:black;border:1px solid white" >  <!-- to overwrite the default button style used -->
+                    <span class="text_forgot">Forgot password?</span>
+                </button>
+            </div>
+
+            <div class="signup">
+                
+                    Don't have an account?
+                    <a href="www.google.com">Sign up</a>
+                
+            </div>
+
+        </div>
+
+    </body>
+</html>
